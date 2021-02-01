@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springboot-log
+server:
+  port: 8080
+logging:
+  level:
+    root: info
+    org.springframework.web: warn
+  file: /data/log/springboot-log.log
+  pattern:
+    console: '%green(%d) | %highlight(%-5level) [%thread] %yellow(%c) %cyan([%L]) -| %msg %n'
+#logging:
+#  config: logback-spring.xml
